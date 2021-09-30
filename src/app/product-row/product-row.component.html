@@ -1,0 +1,11 @@
+<product-image [product]="product"></product-image>
+<div>
+    <div>{{product?.name}}</div>
+    <div>
+        <div>SKU# {{product?.sku}}</div>
+    </div>
+    <div>
+        <product-department [product]="product"></product-department>
+    </div>
+</div>
+<price-display [price]="product?.price"></price-display>
